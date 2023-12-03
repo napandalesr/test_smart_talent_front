@@ -1,0 +1,70 @@
+@import '../../styles/index.scss';
+
+.login {
+  width: 500px;
+  max-width: 90%;
+  border-radius: 14px;
+  padding-top: 0;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  margin: auto;
+  background-color:  #fff;
+  @include screen-desktop {
+    box-shadow: -2px 6px 5px -4px rgba(0,0,0,0.36);
+  }
+  &__title {
+    text-align: center;
+    color: $primary_color;
+    font-size: 18px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    &__sesion {
+      width: 100%;
+      padding: 16px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: -2px 6px 5px -8px rgba(0,0,0,0.36);
+      color: $primary_color;
+      font-size: 16px;
+      font-weight: 600;
+      &.active {
+        box-shadow: -2px 8px 8px -6px rgba(0,0,0,0.36);
+      }
+    }
+  }
+  &__form {
+    margin: 15%;
+    &__register {
+      margin: 0 15%;
+      .checkbox {
+        margin: 0 !important;
+        padding: 0;
+        span {
+          font-size: 12px;
+        }
+      }
+      .registerButton {
+        margin-top: 0 !important;
+      }
+      .confirmPassword {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .ant-form-item {
+    margin: 5%;
+    .ant-row {
+      justify-content: center;
+    }
+  }
+  button {
+    background-color: $primary_color;
+    width: 100%;
+  }
+}

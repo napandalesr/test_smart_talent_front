@@ -1,0 +1,18 @@
+.input {
+  display: inline-flex;
+  margin-right: 30px;
+  &__value {
+    min-width: 300px;
+  }
+}
+
+.form-booking {
+  margin-left: 20px;
+}
+
+.button-booking {
+  width: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}

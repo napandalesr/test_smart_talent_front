@@ -1,0 +1,41 @@
+body, html {
+  margin: 0;
+  background: linear-gradient(90deg, #00377d 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+main {
+  background-color:  #fff;
+  right: 0;
+  padding: 50px 20px;
+  margin-top: 20px;
+  border-radius: 14px;
+  width: 70%;
+  max-height: 80vh;
+  overflow-y: scroll;
+  @media screen and (max-width: 1200px) {
+    width: 60%;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #00377d;
+    border-radius: 14px;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 14px;
+  }
+}
+footer {
+  width: 100%;
+}
+

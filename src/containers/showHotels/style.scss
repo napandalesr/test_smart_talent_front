@@ -1,0 +1,17 @@
+.show-hotels {
+  display: flex;
+  justify-content:  space-evenly;
+  &__list {
+    width: 90%;
+    padding: 30px;
+  }
+  &__filters {
+    padding: 30px;
+    border-left: solid 1px #5b5b5b;
+    margin-top: 20px;
+    width: 30%;
+    .input {
+      margin: 10px 4px;
+    }
+  }
+}
