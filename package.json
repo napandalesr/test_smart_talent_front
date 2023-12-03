@@ -2,6 +2,9 @@
   "name": "test_smart_talent_front",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.14.0"
+  },
   "dependencies": {
     "@tanstack/react-query": "^5.12.2",
     "@testing-library/jest-dom": "^5.17.0",
