@@ -67,7 +67,7 @@ export interface CallApi {
   responseType?: ResponseType
 }
 
-const logout = (): void => {
+export const logout = (): void => {
   localStorage.clear();
   location.href = '/';
 };

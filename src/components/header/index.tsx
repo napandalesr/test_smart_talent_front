@@ -10,6 +10,7 @@ import {
   FormOutlined
 } from '@ant-design/icons';
 import { _Routes } from "../../utils/constans";
+import { logout } from "../../utils/api-call";
 
 const { Sider } = Layout;
 
@@ -34,6 +35,12 @@ const AppHeader: React.FC = () => {
       key: '3',
       icon: <UploadOutlined />,
       label: 'Reservas'
+    },
+    {
+      key: '4',
+      icon: <FormOutlined />,
+      label: 'Salir',
+      onClick: () => { logout(); }
     }
   ];
 
@@ -48,7 +55,7 @@ const AppHeader: React.FC = () => {
       key: '2',
       icon: <FormOutlined />,
       label: 'Salir',
-      onClick: () => { navigate(_Routes.home); }
+      onClick: () => { logout(); }
     }
   ];
   return <header style={{ display: 'flex', height: '100vh' }}>

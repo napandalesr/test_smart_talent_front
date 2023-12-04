@@ -11,7 +11,7 @@ import GuardComponent from "../../Routes/guards";
 
 const Layout: React.FC = () => {
   const { loading } = useSelector((state: any) => state.loadingReducer);
-  init(process.env.REACT_APP_API_HOST ?? '');
+  init('https://smart-back-dlu5.onrender.com');
   return <Suspense fallback={<AppLoading/>}>
     {
       loading && <AppLoading/>
